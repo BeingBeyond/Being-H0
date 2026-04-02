@@ -1,8 +1,8 @@
-# Being-H0: Vision-Language-Action Pretraining from Large-Scale  Human Videos
+# Being-H0: Vision-Language-Action Pretraining from Large-Scale Human Videos
 
 <p align="center">
     <img src="docs/assets/image/being-h0-black.png" width="300"/>
-<p>
+</p>
 
 <div align="center">
 
@@ -15,7 +15,7 @@
 
 <p align="center">
     <img src="docs/assets/image/overview.png"/>
-<p>
+</p>
 
 
 We introduce **Being-H0**, the first dexterous Vision-Language-Action model pretrained from large-scale human videos via explicit hand motion modeling.
@@ -71,7 +71,7 @@ pip install git+https://github.com/mattloper/chumpy.git
 
 - Visit [MANO website](http://mano.is.tue.mpg.de/)
 - Create an account by clicking _Sign Up_ and provide your information
-- Download Models and Code (the downloaded file should have the format `mano_v*_*.zip`). Note that all code and data from this download falls under the [MANO license](http://mano.is.tue.mpg.de/license).
+- Download Models and Code (the downloaded file should have the format `mano_v*_*.zip`). Note that all code and data from this download fall under the [MANO license](http://mano.is.tue.mpg.de/license).
 - Unzip and copy the contents in `mano_v*_*/` folder to the `beingvla/models/motion/mano/` folder
 
 ## Inference
@@ -79,7 +79,7 @@ pip install git+https://github.com/mattloper/chumpy.git
 ### Motion Generation
 
 - To generate hand motion tokens and render the motion, you should use the Motion Model (`Being-H0-GRVQ-8K`) and the pretrained VLA model (`Being-H0-{1B,8B,14B}-2508`). 
-- You can use the following command to inference. For the `--motion_code_path`, you should use a `+` symbol to jointly specify the wrist and finger motion code paths, e.g., `--motion_code_path "/path/to/Being-H0-GRVQ-8K/wrist/+/path/to/Being-H0-GRVQ-8K/finger/"`.
+- You can use the following command to run inference. For the `--motion_code_path`, you should use a `+` symbol to jointly specify the wrist and finger motion code paths, e.g., `--motion_code_path "/path/to/Being-H0-GRVQ-8K/wrist/+/path/to/Being-H0-GRVQ-8K/finger/"`.
 - The `--hand_mode` can be set to `left`, `right`, or `both` to specify which hand to use for the task.
 
 ```bash
@@ -97,13 +97,13 @@ python -m beingvla.inference.vla_internvl_inference \
 ```
 
 - **To inference on your own photos**: See [Camera Intrinsics Guide](docs/camera_intrinsics.md) for how to estimate camera intrinsics and input them for custom inference.
-- Please note that our example images are also photos we took ourselves for testing out-of-distribution (OOD) inference. Therefore, their inference may not perfectly follow the task instruction. You may set a larger `num_seconds` to allow it to fully complete the tasks. For the best results, we recommend using *test images* from the original dataset for inference (eg, EgoDex, TACO, FPHA, etc). However, due to licensing restrictions, we do not provide them directly in this repository. You may need to download the test sets of these datasets yourself.
+- Please note that our example images are also photos we took ourselves for testing out-of-distribution (OOD) inference. Therefore, the generated motions may not always perfectly follow the task instruction. You may set a larger `num_seconds` to allow it to fully complete the tasks. For the best results, we recommend using *test images* from the original dataset for inference (eg, EgoDex, TACO, FPHA, etc). However, due to licensing restrictions, we do not provide them directly in this repository. You may need to download the test sets of these datasets yourself.
 
 ### Evaluation
 
-- You can use our pretrained VLA model to post-train on real robot data. When you get your post-trained model (e.g., `Being-H0-8B-Align-2508`), you can use the following commands to communicate with real robot, or evaluate the model on a robot task.
+- You can use our pretrained VLA model to post-train on real robot data. When you get your post-trained model (e.g., `Being-H0-8B-Align-2508`), you can use the following commands to communicate with real robots, or evaluate the model on a robot task.
 
-- Setup robot communication:
+- To set up robot communication:
 
 ```bash
 python -m beingvla.models.motion.m2m.aligner.run_server \

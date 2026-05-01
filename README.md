@@ -6,7 +6,7 @@
 
 <div align="center">
 
-[![Project Page](https://img.shields.io/badge/Website-Being--H0-green)](https://beingbeyond.github.io/Being-H0)
+[![Project Page](https://img.shields.io/badge/Website-Being--H0-green)](https://research.beingbeyond.com/being-h0)
 [![arXiv](https://img.shields.io/badge/arXiv-2507.15597-b31b1b.svg)](https://arxiv.org/abs/2507.15597)
 [![Model](https://img.shields.io/badge/Hugging%20Face-Model-yellow)](https://huggingface.co/BeingBeyond/Being-H0)
 [![License](https://img.shields.io/badge/License-MIT-blue.svg)](./LICENSE)

@@ -20,8 +20,11 @@
 
 We introduce **Being-H0**, the first dexterous Vision-Language-Action model pretrained from large-scale human videos via explicit hand motion modeling.
 
+*For the latest developments on our **Being-H** series models, please check our new integrated [codebase](https://github.com/BeingBeyond/Being-H).*
+
 ## News
 
+- **[2026-05-01]**: **Being-H0** is accepted by ICML 2026! Welcome to connect with the BeingBeyond Team at the venue then!🔥🔥 
 - **[2025-08-02]**: We release the **Being-H0** codebase and pretrained models! Check our [Hugging Face Model Collections](https://huggingface.co/collections/BeingBeyond/being-h0-688dcc58cbd6b452f16bd7ec) for more details. 🔥🔥🔥
 - **[2025-07-21]**: We publish **Being-H0**! Check our paper [here](https://arxiv.org/abs/2507.15597). 🌟🌟🌟
 
@@ -140,13 +143,36 @@ We encourage researchers and practitioners to leverage Being-H0 as a foundation 
 ## Citation
 If you find our work useful, please consider citing us and give a star to our repository! 🌟🌟🌟
 
+**Being-H0.7**
+
+```bibtex
+@misc{beingbeyond2026beingh07,
+  title={Being-H0.7: A Latent World-Action Model from Egocentric Videos},
+  author={BeingBeyond Team},
+  year={2026},
+  howpublished={\url{https://research.beingbeyond.com/being-h07}}
+}
+```
+
+**Being-H0.5**
+
+```bibtex
+@article{beingbeyond2026beingh05,
+  title={Being-H0. 5: Scaling Human-Centric Robot Learning for Cross-Embodiment Generalization},
+  author={Luo, Hao and Wang, Ye and Zhang, Wanpeng and Zheng, Sipeng and Xi, Ziheng and Xu, Chaoyi and Xu, Haiweng and Yuan, Haoqi and Zhang, Chi and Wang, Yiqing and others},
+  journal={arXiv preprint arXiv:2601.12993},
+  year={2026}
+}
+```
+
 **Being-H0**
 
 ```bibtex
-@article{beingbeyond2025beingh0,
+@inproceedings{beingbeyond2025beingh0,
   title={Being-H0: Vision-Language-Action Pretraining from Large-Scale Human Videos},
   author={Luo, Hao and Feng, Yicheng and Zhang, Wanpeng and Zheng, Sipeng and Wang, Ye and Yuan, Haoqi and Liu, Jiazheng and Xu, Chaoyi and Jin, Qin and Lu, Zongqing},
-  journal={arXiv preprint arXiv:2507.15597},
-  year={2025}
+  booktitle={International Conference on Machine Learning},
+  year={2026},
+  organization={PMLR}
 }
 ```

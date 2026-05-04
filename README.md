@@ -146,11 +146,11 @@ If you find our work useful, please consider citing us and give a star to our re
 **Being-H0.7**
 
 ```bibtex
-@misc{beingbeyond2026beingh07,
-  title={Being-H0.7: A Latent World-Action Model from Egocentric Videos},
-  author={BeingBeyond Team},
-  year={2026},
-  howpublished={\url{https://research.beingbeyond.com/being-h07}}
+@article{beingbeyond2026beingh07,
+  title={Being-H0. 7: A Latent World-Action Model from Egocentric Videos},
+  author={Luo, Hao and Zhang, Wanpeng and Feng, Yicheng and Zheng, Sipeng and Xu, Haiweng and Xu, Chaoyi and Xi, Ziheng and Fu, Yuhui and Lu, Zongqing},
+  journal={arXiv preprint arXiv:2605.00078},
+  year={2026}
 }
 ```
 
